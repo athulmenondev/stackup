@@ -4,15 +4,15 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-# Dummy in-memory database
+
 products = []
 
-# Route to get all products
+
 @app.route('/products', methods=['GET'])
 def get_products():
     return jsonify(products)
 
-# Route to add a new product
+
 @app.route('/products', methods=['POST'])
 def add_product():
     try:
