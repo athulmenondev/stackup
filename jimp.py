@@ -21,7 +21,7 @@ def add_product():
         price = data['price']
         image_url = data['image_url']
 
-        # Process and save the image using Pillow
+         using Pillow
         image = Image.open(BytesIO(image_url))
         image.thumbnail((200, 200))  # Resize the image
         image_buffer = BytesIO()
