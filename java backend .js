@@ -9,7 +9,7 @@ products = [
     # Add more products here
 ]
 
-# Simulated shopping cart (in-memory storage)
+
 cart = []
 
 @app.route('/')
